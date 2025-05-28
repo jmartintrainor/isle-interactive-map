@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
+<html><head>
+    <meta charset="utf-8">
     <title>Mapbox Storytelling</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <style>
@@ -133,9 +132,9 @@
 </head>
 <body>
 
-<div id="map"></div>
-<div id="mapInset"></div>
-<div id="story"></div>
+<div id="map" class="mapboxgl-map"><div class="mapboxgl-canary" style="visibility: hidden;"></div><div class="mapboxgl-canvas-container"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" role="region" width="1904" height="1582" style="width: 952px; height: 791px;"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"></div><div class="mapboxgl-ctrl-bottom-left"><div class="mapboxgl-ctrl" style="display: block;"><a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a></div></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-attrib"><button class="mapboxgl-ctrl-attrib-button" type="button" aria-label="Toggle attribution"><span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Toggle attribution"></span></button><div class="mapboxgl-ctrl-attrib-inner" role="list"><a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox">© Mapbox</a> <a href="https://www.openstreetmap.org/copyright/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=mapbox&amp;id=streets-v11&amp;access_token=pk.eyJ1Ijoiam1hcnRpbnRyYWlub3IiLCJhIjoiY2x2bXliYWhvMDducjJsbnh1dWh0YnJqbiJ9.fsYJqNlqMq492wAcRCTxMg#/-39.44/26.45/2.15" target="_blank" aria-label="Map feedback" rel="noopener nofollow">Improve this map</a></div></div></div></div></div>
+<div id="mapInset" class="mapboxgl-map"><div class="mapboxgl-canary" style="visibility: hidden;"></div><div class="mapboxgl-canvas-container"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" role="region" width="500" height="360" style="width: 250px; height: 180px;"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"></div><div class="mapboxgl-ctrl-bottom-left"><div class="mapboxgl-ctrl" style="display: block;"><a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a></div></div><div class="mapboxgl-ctrl-bottom-right"></div></div></div>
+<div id="story"><div id="features"><div id="iowa" class="step active righty" data-scrollama-index="0"><div class="light"><h3>The Midwest as a hub for immigration</h3><p>Over the past several decades, the Midwest in particual has become a hotbed for immigration. As it stands, around 11% of Black immigrants in the U.S. live in the Midwest. Our storytellers followed three different families from three different African countries, working to understand their journeys across the globe.</p></div></div><div id="liberia" class="step lefty" data-scrollama-index="1"><div class="light"><h3>Liberia</h3><p>Darius and Wealee Nupolu immigrated from Liberia and now live in Iowa. The population is approximately 5.4 million, and the average age is rather young at around 17.9 years old.</p></div></div><div id="togo" class="step lefty" data-scrollama-index="2"><div class="light"><h3>Togo</h3><p>Wazy Sati and Essonia Algea immigrated to Iowa from Togo. Togo gained independence from France in 1960, and French is still the country's official language.</p></div></div><div id="democratic republic of the congo" class="step lefty" data-scrollama-index="3"><div class="light"><h3>Democratic Republic of the Congo</h3><p>Daniel and Dodo Batigue immigrated from the Democratic Republic of the Congo. The population sits at around 111 million, and the most commonly used langauges are French, Kituba, Lingala, Swahili, and Tshiluba.</p></div></div><div id="cedar-rapids" class="step righty" data-scrollama-index="4"><div class="light"><h3>Cedar Rapids</h3><p>The state of Iowa and Cedar Rapids, in particular, have a rich history of welcoming immigrants dating back to the Vietnam War. Over the past few years, immigrants have accounted for around half of the county's population growth. The three families our storytellers were embedded with all settled in the Cedar Rapids area, establishing community ties.</p></div></div></div></div>
 
 <script src="./config.js"></script>
 <script>
@@ -486,5 +485,6 @@ window.addEventListener('resize', scroller.resize);
 
 </script>
 
-</body>
-</html>
+
+
+</body></html>
